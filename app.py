@@ -27,6 +27,7 @@ class VideoCamera(object):
 def detect_cameras():
     print('DETECT CAMERAS')
     global camera_ids, cameras
+    camera_ids, cameras = [], []
     devices = []
     output = subprocess.check_output(['v4l2-ctl', '--list-devices'], shell=False).splitlines()
     for o in output:
