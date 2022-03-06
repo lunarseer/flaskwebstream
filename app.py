@@ -43,7 +43,7 @@ def detect_cameras():
         except:
             continue
     cv2.destroyAllWindows()
-    for _id in camera_ids:
+    for _id in sorted(camera_ids):
         # camera = VideoCamera()
         cameras.append(cv2.VideoCapture(_id))
 
