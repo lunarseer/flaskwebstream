@@ -76,11 +76,11 @@ def video_feed(camera_id, width, heigth):
 
 @app.route('/video_feed_1')
 def video_feed_1():
-    return video_feed(0, 640, 480)
+    return video_feed(1, 1280, 720)
 
 @app.route('/video_feed_2')
 def video_feed_2():
-    return video_feed(1, 1280, 720)
+    return video_feed(2, 640, 480)
 
 
 @app.route('/cam1')
